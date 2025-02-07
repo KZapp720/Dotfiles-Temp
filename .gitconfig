@@ -17,6 +17,8 @@ create        = !gh repo create
 ec            = commit --amend
 lg            = log --color=always --date='format:%a %b %d %Y %I:%M %p' --pretty=format:' %C(bold magenta) %h       %C(bold blue) %ad       %C(bold green) %<(24,trunc)%an       %C(bold yellow) %<(120,trunc)%s'
 page          = "!f() { git log --color=always --date='format:%a %b %d %Y %I:%M %p' --pretty=format:' %C(bold magenta) %h       %C(bold blue) %ad       %C(bold green) %<(24,trunc)%an       %C(bold yellow) %s' \"$@\" | less -RS; }; f"
+rba           = rebase --abort
+rbc           = rebase --continue
 rbi           = rebase -i --root
 rc            = commit --amend --no-edit
 s             = status
