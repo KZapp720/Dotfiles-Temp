@@ -1,0 +1,22 @@
+[user]
+name          = Kevin Zapata
+email         = kevin.c.zapata@gmail.com
+
+
+[init]
+defaultBranch = main
+
+
+[alias]
+uc            = reset HEAD~1
+rc            = commit --amend --no-edit
+rbi           = rebase -i --root
+page          = "!f() { git lg \"$@\" | less -RS; }; f"
+lg            = log --color=always --date='format:%a %b %d %Y %I:%M %p' --pretty=format:' %C(bold magenta) %h       %C(bold blue) %ad       %C(bold green) %<(24,trunc)%an       %C(bold yellow) %s'
+ec            = commit --amend
+create        = !gh repo create
+co            = checkout
+cm            = commit 
+ac            = !git add . && git commit -m
+a             = add .
+
