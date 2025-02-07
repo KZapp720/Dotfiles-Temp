@@ -10,6 +10,7 @@ defaultBranch = main
 [alias]
 a             = add .
 ac            = !git add . && git commit -m
+c             = commit
 co            = checkout
 cm            = commit 
 create        = !gh repo create
@@ -18,5 +19,6 @@ lg            = log --color=always --date='format:%a %b %d %Y %I:%M %p' --pretty
 page          = "!f() { git log --color=always --date='format:%a %b %d %Y %I:%M %p' --pretty=format:' %C(bold magenta) %h       %C(bold blue) %ad       %C(bold green) %<(24,trunc)%an       %C(bold yellow) %s' \"$@\" | less -RS; }; f"
 rbi           = rebase -i --root
 rc            = commit --amend --no-edit
+s             = status
 uc            = reset HEAD~1
 
