@@ -12,11 +12,11 @@
 
 ```sh
 cd $HOME
-git clone https://github.com/KZapp720/Dotfiles.git $HOME/temp-dotfiles/
-rsync -avh --progress $HOME/temp-dotfiles/ $HOME/
-rm -rf $HOME/temp-dotfiles/
+git clone https://github.com/KZapp720/Dotfiles-Temp.git $HOME/dotfiles-temp/
+rsync -avh --progress $HOME/dotfiles-temp/ $HOME/
+rm -rf $HOME/dotfiles-temp/
 rm -rf $HOME/.git/
-rm $HOME/LICENSE
+rm $HOME/LICENSE.md
 rm $HOME/README.md
 ```
 
